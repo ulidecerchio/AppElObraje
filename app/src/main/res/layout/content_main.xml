@@ -9,12 +9,24 @@
     tools:showIn="@layout/app_bar_main"
     tools:context="maravilla.equipo.appelobraje20.MainActivity">
 
+    <TextureView
+        android:id="@+id/textureView"
+        android:layout_width="416dp"
+        android:layout_height="212dp"
+        tools:layout_editor_absoluteY="19dp"
+        tools:layout_editor_absoluteX="-15dp" />
+
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="261dp"
+        android:layout_height="122dp"
+        android:text="Bienvenido a la Aplicacion del Obraje"
+        android:textAlignment="center"
+        android:textColor="#c3be0808"
+        android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.081" />
 
 </android.support.constraint.ConstraintLayout>

@@ -1,5 +1,6 @@
 package maravilla.equipo.appelobraje20;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -81,17 +82,24 @@ public class MainActivity extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.nav_camera) {
-            // Handle the camera action
-        } else if (id == R.id.nav_gallery) {
+            Intent i = new Intent(this, HistoriaActivity.class);
+            startActivity(i);
 
         } else if (id == R.id.nav_slideshow) {
+            Intent i = new Intent(this, OrientacionActivity.class);
+            startActivity(i);
 
-        } else if (id == R.id.nav_manage) {
+        } else if (id == R.id.nav_galeria) {
+            Intent i = new Intent(this, GaleriaActivity.class);
+            startActivity(i);
 
-        } else if (id == R.id.nav_share) {
 
-        } else if (id == R.id.nav_send) {
-
+        } else if (id == R.id.nav_contacto) {
+            Intent i = new Intent(this, ContactoActivity.class);
+            startActivity(i);
+        } else if (id == R.id.nav_primario) {
+            Intent i = new Intent(this, PrimarioActivity.class);
+            startActivity(i);
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
